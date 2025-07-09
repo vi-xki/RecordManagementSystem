@@ -38,7 +38,27 @@
             <input type="file" name="file" accept=".csv" required>
             <button class="btn" type="submit">Upload</button>
         </form>
-        <p style="font-size: 12px; color: gray;">File must contain: Name, Email, Phone, Department, Salary</p>
+    </div>
+
+
+        <div class="section">
+        <h3>Filter Records</h3>
+        <form method="GET" action="<?php echo site_url('dashboard'); ?>">
+            <div class="filters">
+                <div>
+                    <input type="text" name="name" placeholder="Filter by Name" >
+                </div>
+                <div>
+                    <input type="text" name="email" placeholder="Filter by Email" >
+                </div>
+                <div>
+                    <input type="text" name="department" placeholder="Filter by Department">
+                </div>
+                <div>
+                    <button class="btn" type="submit">Apply</button>
+                </div>
+            </div>
+        </form>
     </div>
 
 

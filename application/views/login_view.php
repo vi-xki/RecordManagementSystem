@@ -84,12 +84,10 @@
             <button class="btn" type="submit">Login</button>
             
             <p style="text-align:center; margin-top: 10px; font-size: 12px;">
-                Don’t have an account? <a href="<?php site_url('register') ?>">Register here</a>
+                Don’t have an account?  <a href="<?= site_url('auth/register') ?>">Register here</a>
             </p>
 
         </form>
-        <p style="text-align:center; margin-top:15px; font-size:12px;">Demo: admin / admin123</p>
     </div>
 </body>
-
 </html>

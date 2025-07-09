@@ -11,7 +11,13 @@ class Record_model extends CI_Model {
         if (!empty($filters['department'])) {
             $this->db->like('department', $filters['department']);
         }
-        return $this->db->order_by('created_at', 'DESC')->get('records')->result_array();
+
+
+        
+        $res = $this->db->order_by('created_at', 'DESC')->get('records')->result_array();
+        // echo "<pre>"; echo "test"; print_r($this->db->lase_query());exit;
+                return $res;
+
     }
 
     public function get_existing_emails() {

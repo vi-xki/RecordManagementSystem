@@ -10,6 +10,8 @@ class Dashboard extends CI_Controller {
     }
 
     public function index() {
+
+        // echo "TEST_____________________--------------";exit;
         $filters = $this->input->get();
         $data['records'] = $this->Record_model->get_records($filters);
         $data['username'] = $this->session->userdata('username');
